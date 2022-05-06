@@ -11,6 +11,12 @@ namespace PojazdyLibrary
             State = VehicleState.Moving;
         }
 
+        public override string ToString()
+        {
+            return ToStringBase() +
+                $"{Engine}\n";
+        }
+
         public void VehicleLand()
         {
             if (EnvironmentCurrent.Type != EnvironmentType.Air)

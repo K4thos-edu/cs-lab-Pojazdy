@@ -14,6 +14,14 @@ namespace PojazdyLibrary
             State = VehicleState.Stationary;
         }
 
+        public override string ToString()
+        {
+            return ToStringBase() +
+                $"; Wheels: {Wheels}" +
+                $"; Displacement: {Displacement}" +
+                $"{Engine}\n";
+        }
+
         public void VehicleWaterToGround()
         {
             if (EnvironmentCurrent.Type != EnvironmentType.Water)

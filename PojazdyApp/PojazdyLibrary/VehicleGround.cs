@@ -13,5 +13,11 @@ namespace PojazdyLibrary
             State = VehicleState.Stationary;
         }
 
+        public override string ToString()
+        {
+            return ToStringBase() +
+                $"; Wheels: {Wheels}" +
+                $"{Engine}\n";
+        }
     }
 }

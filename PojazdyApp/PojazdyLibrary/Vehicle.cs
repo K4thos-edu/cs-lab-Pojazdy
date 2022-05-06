@@ -61,6 +61,22 @@ namespace PojazdyLibrary
             return Math.Round(output, precision);
         }
 
+        public override string ToString()
+        {
+            return ToStringBase();
+        }
+
+        public virtual string ToStringBase()
+        {
+            return $"Object type: {Name}" +
+            $"; Vehicle type: {Type}" +
+            $"; Current environment: {EnvironmentCurrent.Type}" +
+            $"; Current state: {State}" +
+            $"; Min speed: {EnvironmentCurrent.SpeedMin} {EnvironmentCurrent.Unit}" +
+            $"; Max speed: {EnvironmentCurrent.SpeedMax} {EnvironmentCurrent.Unit}" +
+            $"; Speed: {Speed} {EnvironmentCurrent.Unit}";
+        }
+
         public void VehicleStart()
         {
             if (Engine != null && Engine.State == EngineState.On)

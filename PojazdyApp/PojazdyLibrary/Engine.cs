@@ -15,5 +15,14 @@ namespace PojazdyLibrary
             Fuel = fuelType;
             State = EngineState.Off;
         }
+        public override string ToString()
+        {
+            if (this == null)
+            {
+                return string.Empty;
+            }
+            return $"; Engine power: {Power}" +
+            $"; Fuel type: {Fuel}";
+        }
     }
 }

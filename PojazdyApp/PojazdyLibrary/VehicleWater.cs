@@ -13,6 +13,13 @@ namespace PojazdyLibrary
             State = VehicleState.Stationary;
         }
 
+        public override string ToString()
+        {
+            return ToStringBase() +
+                $"; Displacement: {Displacement}" +
+                $"{Engine}\n";
+        }
+
         public override Engine UseEngine(Engine engineType)
         {
             if (engineType.Fuel != FuelType.Oil)
