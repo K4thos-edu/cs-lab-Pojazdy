@@ -2,11 +2,11 @@
 
 namespace PojazdyLibrary
 {
-    public class TypeBoat : VehicleWater
+    public class Boat : VehicleWater
     {
-        public TypeBoat(int displacement) : base()
+        public Boat(int displacement) : base()
         {
-            Type = "Boat";
+            Name = "Boat";
             Displacement = displacement;
         }
 

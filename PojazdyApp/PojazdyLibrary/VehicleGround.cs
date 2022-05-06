@@ -8,11 +8,9 @@ namespace PojazdyLibrary
 
         protected VehicleGround() : base()
         {
-            Environment = MovementEnvironment.ground;
-            State = VehicleState.stationary;
-            Unit = SpeedUnit.kmph;
-            SpeedMin = 1;
-            SpeedMax = 350;
+            Type = VehicleType.Ground;
+            EnvironmentCurrent = IEnvironment.Environments.EnvironmentGround;
+            State = VehicleState.Stationary;
         }
 
     }

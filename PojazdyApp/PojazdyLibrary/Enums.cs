@@ -2,33 +2,40 @@
 
 namespace PojazdyLibrary
 {
-    public enum SpeedUnit
+    public enum VehicleType
     {
-        mps,
-        kmph,
-        knots
-    }
-    public enum FuelType
-    {
-        gas,
-        oil,
-        lpg,
-        electric
-    }
-    public enum MotorState
-    {
-        on,
-        off
-    }
-    public enum MovementEnvironment
-    {
-        ground,
-        air,
-        water
+        Air,
+        Ground,
+        Water,
+        Multipurpose
     }
     public enum VehicleState
     {
-        moving,
-        stationary
+        Moving,
+        Stationary
+    }
+    public enum EnvironmentType
+    {
+        Air,
+        Ground,
+        Water
+    }
+    public enum SpeedUnit
+    {
+        Mps,
+        Kmph,
+        Knots
+    }
+    public enum FuelType
+    {
+        Gas,
+        Oil,
+        Lpg,
+        Electric
+    }
+    public enum EngineState
+    {
+        On,
+        Off
     }
 }
